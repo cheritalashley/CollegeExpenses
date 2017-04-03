@@ -1,0 +1,89 @@
+package challenges;
+
+import java.util.Date;
+
+public class Event {
+	String eventName;
+	String eventType;
+	Date date;
+	int guests;
+	double costGuest;
+	int eventNum;
+	
+	public Event(){}
+
+	public Event(String eventName){
+	}
+	
+	public Event(String eventName, Date date){
+	}
+	
+	public Event(String eventName, Date date, int guests){
+	}
+	
+	public String getEventName() {
+		return eventName;
+	}
+
+	public void setEventName(String eventName) {
+		this.eventName = eventName;
+	}
+	
+	public String getEventType() {
+		int eventNum=0;
+		char eventTypeChar=eventName.charAt(0);
+		eventNum++;
+		eventType=Character.toString(eventTypeChar)+Integer.toString(eventNum);
+		return eventType;
+	}
+
+	public void setEventType(String eventType) {
+		this.eventType = eventType;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public int getGuests() {
+		return guests;
+	}
+
+	public void setGuests(int guests) {
+		this.guests = guests;
+	}
+
+	public double getCostGuest() {
+		return costGuest;
+	}
+
+	public void setCostGuest(double costGuest) {
+		this.costGuest = costGuest;
+	}
+
+	public int getEventNum() {
+		return eventNum;
+	}
+
+	public void setEventNum(int eventNum) {
+		this.eventNum = eventNum;
+	}
+	
+	public double calculateTotal(){
+		double total=costGuest*guests;
+		return total;
+	}
+	
+	public void print(){
+		System.out.println("Event Type: " + getEventType()+ "Event Name: " + 
+							getEventName() + "\nEvent Date: " + 
+							getDate() + "\nNumber of Guests: " + getGuests()
+							+ "\nEvent Total: " + calculateTotal());
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+french fries	2.99
+hamburgers	1.87
+cheeseburgers	3.12
+applepies	2.99
+shakes	3.12
+pancakes	1.49
+sodas	1.99
+chicken sandwich	2.49
+big-mac	3.0
+cookies	1.0
