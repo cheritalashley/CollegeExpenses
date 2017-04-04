@@ -4,6 +4,8 @@ bin/
 .settings/
 .recommenders/
 .metadata/
+build/
+
 
 .project
 .classpath
